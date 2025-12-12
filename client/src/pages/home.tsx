@@ -5,10 +5,8 @@ import FeaturesSection from "@/components/FeaturesSection";
 import PresaleWidget from "@/components/PresaleWidget";
 import TokenomicsSection from "@/components/TokenomicsSection";
 import EcosystemSection from "@/components/EcosystemSection";
-import ComparisonTable from "@/components/ComparisonTable";
 import BenefitsSection from "@/components/BenefitsSection";
 import RoadmapSection from "@/components/RoadmapSection";
-import DeveloperSection from "@/components/DeveloperSection";
 import PartnersSection from "@/components/PartnersSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
@@ -36,12 +34,10 @@ export default function Home() {
 
       <PartnersSection />
       <FeaturesSection />
-      <ComparisonTable />
+      <EcosystemSection />
       <BenefitsSection />
       <TokenomicsSection />
-      <EcosystemSection />
       <RoadmapSection />
-      <DeveloperSection />
       <FAQSection />
       <Footer />
     </div>

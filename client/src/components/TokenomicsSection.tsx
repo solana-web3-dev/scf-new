@@ -7,9 +7,10 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 const tokenomicsData = [
   { name: "Presale", value: 40, color: "hsl(199, 100%, 59%)" },
   { name: "Liquidity", value: 25, color: "hsl(270, 91%, 65%)" },
-  { name: "Development", value: 20, color: "hsl(145, 84%, 72%)" },
+  { name: "Development", value: 15, color: "hsl(145, 84%, 72%)" },
   { name: "Marketing", value: 10, color: "hsl(30, 95%, 65%)" },
   { name: "Team", value: 5, color: "hsl(340, 88%, 65%)" },
+  { name: "Ecosystem Rewards", value: 5, color: "hsl(180, 70%, 50%)" },
 ];
 
 export default function TokenomicsSection() {
@@ -21,11 +22,11 @@ export default function TokenomicsSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] bg-clip-text text-transparent">
-              Tokenomics
+              $SCF Tokenomics
             </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Fair distribution designed for long-term growth and community rewards.
+            Fair distribution designed for ecosystem growth and community rewards.
           </p>
         </div>
 
@@ -84,7 +85,7 @@ export default function TokenomicsSection() {
                     <div className="text-sm text-muted-foreground">Total Supply</div>
                   </div>
                   <div>
-                    <div className="text-xl font-bold text-[hsl(var(--neon-green))]">$0.0002899</div>
+                    <div className="text-xl font-bold text-[hsl(var(--neon-green))]">$0.00025</div>
                     <div className="text-sm text-muted-foreground">Presale Price</div>
                   </div>
                 </div>

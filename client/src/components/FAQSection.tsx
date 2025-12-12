@@ -8,34 +8,34 @@ import {
 // todo: remove mock functionality
 const faqs = [
   {
-    question: "What is YourChain?",
+    question: "What is Solana Creator Fun (SCF)?",
     answer:
-      "YourChain is a next-generation Layer-1 blockchain optimized for real-time applications, especially gaming. With 65,000+ TPS and sub-second finality, it's built to handle high-throughput applications without compromising on security or decentralization.",
+      "SCF is a Solana-based ecosystem that builds and provides services for creators on Solana. We develop our own dApps (launch pads, sniper bots, games, websites) and offer these same services to other creators who want to build on Solana.",
+  },
+  {
+    question: "What is the $SCF token used for?",
+    answer:
+      "The $SCF token is the utility token for our ecosystem. It's used for accessing premium features, reduced fees on our services, staking rewards, governance voting, and exclusive access to new service launches.",
+  },
+  {
+    question: "What services are you launching?",
+    answer:
+      "We're launching 6 core services: Launch Pad for fair token launches, Sniper Bot for fast trading, Games (lottery, cards, betting), Memecoin Website Builder, Token ICO Website platform, and Token Pre-Sale Website platform. All services are being developed simultaneously.",
   },
   {
     question: "How do I participate in the presale?",
     answer:
-      "To participate in the presale, connect your wallet using the 'Connect Wallet' button on our presale widget. You can purchase $YRC tokens using ETH, USDT, or USDC across multiple networks including Ethereum, BSC, and Solana.",
+      "Connect your Solana wallet using the presale widget on our website. You can purchase $SCF tokens using SOL, USDT, or USDC. The presale has a countdown timer showing the remaining time to participate.",
   },
   {
-    question: "What makes YourChain different from other blockchains?",
+    question: "When will the services launch?",
     answer:
-      "YourChain is purpose-built for gaming with ultra-low latency (150ms), instant finality (1-3 seconds), and a comprehensive Game SDK. Unlike general-purpose chains, we provide specialized tools for game developers including NFT infrastructure, in-game asset management, and cross-chain bridges.",
+      "Our roadmap shows Launch Pad and Sniper Bot launching in Q2 2025, Games Platform in Q3 2025, and Creator Tools (Memecoin sites, ICO, Pre-Sale platforms) in Q4 2025. Join our community for the latest updates.",
   },
   {
-    question: "Is YourChain audited?",
+    question: "Can I use your services for my own project?",
     answer:
-      "Yes, YourChain has undergone comprehensive security audits by leading blockchain security firms including Coinsult and SolidProof. Our smart contracts are thoroughly tested and verified to ensure the highest level of security for our users.",
-  },
-  {
-    question: "When is the mainnet launch?",
-    answer:
-      "Our mainnet launched in Q2 2024. We are currently focused on expanding our ecosystem with the cross-chain bridge (Q3 2024), developer grants program (Q4 2024), and strategic gaming partnerships (Q1 2025).",
-  },
-  {
-    question: "How can I stake $YRC tokens?",
-    answer:
-      "Once you have $YRC tokens, you can stake them through our Staking Portal. Staking rewards are distributed automatically based on the amount staked and duration. Visit our documentation for detailed staking instructions.",
+      "Yes! That's the core idea behind SCF. We build these services for ourselves first, then offer them to other Solana creators. You'll be able to launch your token, create your memecoin website, run a presale, and more using our platform.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function FAQSection() {
             </span>
           </h2>
           <p className="text-muted-foreground">
-            Everything you need to know about YourChain.
+            Everything you need to know about Solana Creator Fun.
           </p>
         </div>
 

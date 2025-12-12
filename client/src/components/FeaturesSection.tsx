@@ -1,29 +1,29 @@
-import { Zap, Gamepad2, Link2, Shield } from "lucide-react";
+import { Zap, Users, Wrench, Shield } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
   {
     icon: Zap,
-    title: "Ultra-Fast Transactions",
-    description: "65,000+ TPS with 150ms latency. Keep your game smooth even when thousands of players flood in.",
+    title: "Built on Solana",
+    description: "Lightning-fast transactions with low fees. Perfect for creators who need speed and reliability.",
     color: "neon-blue",
   },
   {
-    icon: Gamepad2,
-    title: "Gaming-Optimized Chain",
-    description: "Purpose-built for gaming with dev-friendly toolkit. Build, deploy, and scale your game fast.",
+    icon: Users,
+    title: "For Creators, By Creators",
+    description: "We use every service we build. If it's good enough for us, it's good enough for you.",
     color: "neon-purple",
   },
   {
-    icon: Link2,
-    title: "Cross-Chain Bridge",
-    description: "Move assets between chains from a single wallet. Seamless interoperability with major networks.",
+    icon: Wrench,
+    title: "Full-Service Platform",
+    description: "From launch pads to games, we've got everything you need to build on Solana.",
     color: "neon-green",
   },
   {
     icon: Shield,
-    title: "Battle-Tested Security",
-    description: "Top-tier protection with PoS + dBFT consensus. Audited smart contracts for peace of mind.",
+    title: "Secure & Audited",
+    description: "All our smart contracts and services undergo rigorous security audits.",
     color: "neon-blue",
   },
 ];
@@ -37,11 +37,11 @@ export default function FeaturesSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] bg-clip-text text-transparent">
-              Why Choose YourChain?
+              Why Choose SCF?
             </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Built from the ground up for performance, security, and developer experience.
+            We don't just build for others - we use these services ourselves.
           </p>
         </div>
 

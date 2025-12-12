@@ -5,7 +5,7 @@ import { SiX, SiTelegram } from "react-icons/si";
 
 const navLinks = [
   { label: "ABOUT", href: "#about" },
-  { label: "ECOSYSTEM", href: "#ecosystem" },
+  { label: "SERVICES", href: "#services" },
   { label: "TOKENOMICS", href: "#tokenomics" },
   { label: "ROADMAP", href: "#roadmap" },
   { label: "FAQ", href: "#faq" },
@@ -28,9 +28,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 gap-4">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] flex items-center justify-center">
-              <span className="text-white font-bold text-sm">YC</span>
+              <span className="text-white font-bold text-sm">SCF</span>
             </div>
-            <span className="font-bold text-lg text-foreground hidden sm:block">YourChain</span>
+            <span className="font-bold text-lg text-foreground hidden sm:block">Solana Creator Fun</span>
           </div>
 
           <div className="hidden lg:flex items-center gap-6">
@@ -73,7 +73,7 @@ export default function Navbar() {
               className="bg-gradient-to-r from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] text-white border-0 font-semibold"
               data-testid="button-buy-tokens"
             >
-              Buy $YRC
+              Buy $SCF
             </Button>
 
             <button

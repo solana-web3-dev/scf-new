@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FileText, Coins, ArrowRight, Shield, Zap } from "lucide-react";
+import { FileText, Coins, Rocket, Sparkles } from "lucide-react";
 import heroImage from "@assets/generated_images/floating_crypto_coins_hero_visual.png";
 
 export default function HeroSection() {
@@ -17,25 +17,25 @@ export default function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--neon-blue)/0.1)] border border-[hsl(var(--neon-blue)/0.3)]">
-              <Zap className="w-4 h-4 text-[hsl(var(--neon-blue))]" />
-              <span className="text-sm font-medium text-[hsl(var(--neon-blue))]">65,000 TPS</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--neon-purple)/0.1)] border border-[hsl(var(--neon-purple)/0.3)]">
+              <Sparkles className="w-4 h-4 text-[hsl(var(--neon-purple))]" />
+              <span className="text-sm font-medium text-[hsl(var(--neon-purple))]">Built on Solana</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="text-foreground">Next-Generation</span>
+              <span className="text-foreground">Solana</span>
               <br />
               <span className="bg-gradient-to-r from-[hsl(var(--neon-blue))] via-[hsl(var(--neon-purple))] to-[hsl(var(--neon-green))] bg-clip-text text-transparent">
-                Layer-1
+                Creator Fun
               </span>
               <br />
-              <span className="text-foreground">for Real-Time Apps</span>
+              <span className="text-foreground">Build & Launch</span>
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-lg">
-              The fastest L1 chain built to power the next era of onchain games. 
-              Ultra-fast transactions, gaming-optimized, with cross-chain bridge support.
-              Built for developers, by developers.
+              Your gateway to building and launching dApps on Solana. We build our own services 
+              AND provide them to other creators. Launch pads, sniper bots, games, memecoin sites, 
+              and token platforms - all in one ecosystem.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -45,7 +45,7 @@ export default function HeroSection() {
                 data-testid="button-hero-buy-tokens"
               >
                 <Coins className="w-5 h-5 mr-2" />
-                Buy Tokens
+                Buy $SCF Tokens
               </Button>
               <Button
                 size="lg"
@@ -60,12 +60,12 @@ export default function HeroSection() {
 
             <div className="flex items-center gap-6 pt-4">
               <div className="flex items-center gap-2">
-                <Shield className="w-5 h-5 text-[hsl(var(--neon-green))]" />
-                <span className="text-sm text-muted-foreground">Audited by Coinsult</span>
+                <Rocket className="w-5 h-5 text-[hsl(var(--neon-green))]" />
+                <span className="text-sm text-muted-foreground">6 Services Launching Soon</span>
               </div>
               <div className="flex items-center gap-2">
-                <Shield className="w-5 h-5 text-[hsl(var(--neon-green))]" />
-                <span className="text-sm text-muted-foreground">Verified by SolidProof</span>
+                <Sparkles className="w-5 h-5 text-[hsl(var(--neon-green))]" />
+                <span className="text-sm text-muted-foreground">For Creators, By Creators</span>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--neon-blue)/0.3)] to-[hsl(var(--neon-purple)/0.3)] rounded-full blur-3xl" />
               <img
                 src={heroImage}
-                alt="Blockchain visualization"
+                alt="SCF Token visualization"
                 className="relative w-full max-w-md lg:max-w-lg animate-float"
               />
             </div>
@@ -84,10 +84,10 @@ export default function HeroSection() {
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { label: "Transactions/sec", value: "65,000+" },
-            { label: "Latency", value: "150ms" },
-            { label: "Finality", value: "1-3 sec" },
-            { label: "Active Users", value: "50K+" },
+            { label: "Services", value: "6" },
+            { label: "Network", value: "Solana" },
+            { label: "Token", value: "$SCF" },
+            { label: "Status", value: "Presale" },
           ].map((stat) => (
             <div
               key={stat.label}

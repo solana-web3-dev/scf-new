@@ -11,25 +11,18 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const networks = [
-  { id: "eth", name: "ETH", icon: "Ξ" },
-  { id: "bsc", name: "BSC", icon: "B" },
-  { id: "sol", name: "SOL", icon: "S" },
-];
-
 const currencies = [
-  { id: "eth", name: "ETH", icon: "Ξ" },
+  { id: "sol", name: "SOL", icon: "S" },
   { id: "usdt", name: "USDT", icon: "$" },
   { id: "usdc", name: "USDC", icon: "$" },
 ];
 
 // todo: remove mock functionality
-const PRESALE_END = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
-const RAISED = 60477.72;
-const TARGET = 385699.13;
+const PRESALE_END = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000);
+const RAISED = 45250.00;
+const TARGET = 250000.00;
 
 export default function PresaleWidget() {
-  const [selectedNetwork, setSelectedNetwork] = useState(networks[0]);
   const [selectedCurrency, setSelectedCurrency] = useState(currencies[0]);
   const [amount, setAmount] = useState("");
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -55,13 +48,14 @@ export default function PresaleWidget() {
     return () => clearInterval(timer);
   }, []);
 
-  const receiveAmount = amount ? (parseFloat(amount) / 0.0002899).toFixed(2) : "0";
+  const tokenPrice = 0.00025;
+  const receiveAmount = amount ? (parseFloat(amount) / tokenPrice).toFixed(2) : "0";
   const progress = (RAISED / TARGET) * 100;
 
   return (
     <Card className="p-6 bg-card/80 border-border backdrop-blur-xl max-w-md w-full">
       <h3 className="text-xl font-bold text-center mb-6 bg-gradient-to-r from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] bg-clip-text text-transparent">
-        BUY $YRC NOW!
+        BUY $SCF NOW!
       </h3>
 
       <div className="grid grid-cols-4 gap-3 mb-6">
@@ -87,41 +81,15 @@ export default function PresaleWidget() {
       </div>
 
       <div className="space-y-4">
-        <div>
-          <label className="text-sm text-muted-foreground mb-2 block">Network:</label>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-full justify-between" data-testid="dropdown-network">
-                <span className="flex items-center gap-2">
-                  <span className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-xs">
-                    {selectedNetwork.icon}
-                  </span>
-                  {selectedNetwork.name}
-                </span>
-                <ChevronDown className="w-4 h-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-full">
-              {networks.map((network) => (
-                <DropdownMenuItem
-                  key={network.id}
-                  onClick={() => setSelectedNetwork(network)}
-                  data-testid={`network-${network.id}`}
-                >
-                  <span className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-xs mr-2">
-                    {network.icon}
-                  </span>
-                  {network.name}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
+        <div className="p-3 rounded-lg bg-[hsl(var(--neon-purple)/0.1)] border border-[hsl(var(--neon-purple)/0.3)] text-center">
+          <span className="text-sm text-[hsl(var(--neon-purple))]">Network: </span>
+          <span className="text-sm font-semibold text-foreground">Solana</span>
         </div>
 
         <div>
           <div className="flex justify-between text-sm mb-2">
             <span className="text-muted-foreground">Pay with {selectedCurrency.name}:</span>
-            <span className="text-muted-foreground">Balance: 0.00000</span>
+            <span className="text-muted-foreground">Balance: 0.00</span>
           </div>
           <div className="relative">
             <Input
@@ -140,7 +108,7 @@ export default function PresaleWidget() {
                 onClick={() => setAmount("1")}
                 data-testid="button-use-max"
               >
-                USE MAX
+                MAX
               </Button>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -171,14 +139,14 @@ export default function PresaleWidget() {
         </div>
 
         <div>
-          <div className="text-sm text-muted-foreground mb-2">Receive $YRC:</div>
+          <div className="text-sm text-muted-foreground mb-2">Receive $SCF:</div>
           <div className="p-3 rounded-md bg-secondary/50 border border-border">
             <span className="text-lg font-semibold">{receiveAmount}</span>
           </div>
         </div>
 
         <div className="text-center text-sm text-muted-foreground">
-          1 $YRC = $0.0002899
+          1 $SCF = ${tokenPrice}
         </div>
 
         <Button

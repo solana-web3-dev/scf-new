@@ -1,28 +1,28 @@
 import { SiX, SiTelegram, SiDiscord, SiGithub } from "react-icons/si";
 
 const footerLinks = {
-  products: [
-    { label: "Wallet", href: "#" },
-    { label: "Bridge", href: "#" },
-    { label: "Staking", href: "#" },
-    { label: "NFT Marketplace", href: "#" },
+  services: [
+    { label: "Launch Pad", href: "#" },
+    { label: "Sniper Bot", href: "#" },
+    { label: "Games", href: "#" },
+    { label: "Memecoin Sites", href: "#" },
+    { label: "ICO Platform", href: "#" },
+    { label: "Pre-Sale Platform", href: "#" },
   ],
-  developers: [
+  resources: [
     { label: "Documentation", href: "#" },
-    { label: "GitHub", href: "#" },
-    { label: "SDK", href: "#" },
     { label: "Whitepaper", href: "#" },
+    { label: "Tokenomics", href: "#tokenomics" },
+    { label: "Roadmap", href: "#roadmap" },
   ],
   company: [
-    { label: "About", href: "#" },
+    { label: "About", href: "#about" },
     { label: "Blog", href: "#" },
-    { label: "Careers", href: "#" },
     { label: "Contact", href: "#" },
   ],
   legal: [
     { label: "Privacy Policy", href: "#" },
     { label: "Terms of Service", href: "#" },
-    { label: "Cookie Policy", href: "#" },
   ],
 };
 
@@ -41,12 +41,12 @@ export default function Footer() {
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] flex items-center justify-center">
-                <span className="text-white font-bold text-sm">YC</span>
+                <span className="text-white font-bold text-sm">SCF</span>
               </div>
-              <span className="font-bold text-lg text-foreground">YourChain</span>
+              <span className="font-bold text-lg text-foreground">Solana Creator Fun</span>
             </div>
             <p className="text-sm text-muted-foreground mb-6 max-w-xs">
-              Next-Generation Layer-1 for Real-Time Apps. The fastest L1 chain built to power the next era of onchain games.
+              Your gateway to building and launching dApps on Solana. We build for ourselves and provide services to other creators.
             </p>
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
@@ -65,14 +65,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Products</h4>
+            <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-3">
-              {footerLinks.products.map((link) => (
+              {footerLinks.services.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                    data-testid={`footer-link-${link.label.toLowerCase()}`}
+                    data-testid={`footer-link-${link.label.toLowerCase().replace(/\s/g, "-")}`}
                   >
                     {link.label}
                   </a>
@@ -82,9 +82,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Developers</h4>
+            <h4 className="font-semibold text-foreground mb-4">Resources</h4>
             <ul className="space-y-3">
-              {footerLinks.developers.map((link) => (
+              {footerLinks.resources.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
@@ -135,10 +135,10 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} YourChain. All rights reserved.
+            &copy; {new Date().getFullYear()} Solana Creator Fun. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Built with blockchain technology
+            Built on Solana
           </p>
         </div>
       </div>

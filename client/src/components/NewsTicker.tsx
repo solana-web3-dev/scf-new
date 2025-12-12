@@ -1,10 +1,12 @@
 const newsItems = [
-  "Next-Gen Layer-1 for Real-Time Apps",
-  "65,000 TPS Ultra-Fast Transactions",
-  "Gaming-Optimized Blockchain",
-  "Cross-Chain Bridge Live",
-  "Join the Presale Now",
-  "Built for Developers, by Developers",
+  "Solana Creator Fun - Build & Launch on Solana",
+  "Launch Pad Coming Soon",
+  "Sniper Bot Service Launching Soon",
+  "Lottery, Card & Betting Games Coming Soon",
+  "Join the $SCF Presale Now",
+  "Built for Solana Creators",
+  "Memecoin Website Builder Launching Soon",
+  "Token ICO & Pre-Sale Platforms Coming Soon",
 ];
 
 export default function NewsTicker() {

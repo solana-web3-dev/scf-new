@@ -4,33 +4,33 @@ import { Check, Circle } from "lucide-react";
 // todo: remove mock functionality
 const roadmapItems = [
   {
-    quarter: "Q1 2024",
-    title: "Testnet Launch",
-    description: "Public testnet deployment with developer tools and documentation.",
-    status: "completed",
-  },
-  {
-    quarter: "Q2 2024",
-    title: "Mainnet Launch",
-    description: "Full mainnet deployment with cross-chain bridge integration.",
-    status: "completed",
-  },
-  {
-    quarter: "Q3 2024",
-    title: "Bridge v1 Release",
-    description: "Launch of cross-chain bridge supporting ETH, BSC, and Solana.",
+    quarter: "Q1 2025",
+    title: "Presale & Community",
+    description: "Launch $SCF token presale, build community, and finalize service development.",
     status: "in-progress",
   },
   {
-    quarter: "Q4 2024",
-    title: "Developer Grants",
-    description: "Launch of $10M developer grants program for ecosystem growth.",
+    quarter: "Q2 2025",
+    title: "Launch Pad & Sniper Bot",
+    description: "Release Launch Pad and Sniper Bot services for the Solana ecosystem.",
     status: "upcoming",
   },
   {
-    quarter: "Q1 2025",
-    title: "Game Partnerships",
-    description: "Strategic partnerships with top gaming studios and publishers.",
+    quarter: "Q3 2025",
+    title: "Games Platform",
+    description: "Launch lottery, card games, and betting platform with provably fair mechanics.",
+    status: "upcoming",
+  },
+  {
+    quarter: "Q4 2025",
+    title: "Creator Tools",
+    description: "Release Memecoin Website Builder, Token ICO, and Pre-Sale Website services.",
+    status: "upcoming",
+  },
+  {
+    quarter: "Q1 2026",
+    title: "Ecosystem Expansion",
+    description: "Additional services, partnerships, and cross-chain integrations.",
     status: "upcoming",
   },
 ];
@@ -48,7 +48,7 @@ export default function RoadmapSection() {
             </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Our journey to revolutionize blockchain gaming.
+            Our journey to build the ultimate Solana creator ecosystem.
           </p>
         </div>
 

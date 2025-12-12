@@ -1,31 +1,31 @@
 import { Card } from "@/components/ui/card";
-import { Coins, Zap, Wallet, Server, DollarSign } from "lucide-react";
+import { Rocket, Wrench, Users, Coins, Zap } from "lucide-react";
 
 const benefits = [
   {
+    icon: Rocket,
+    title: "Launch Your Project",
+    description: "Use our launch pad and pre-sale platforms to get your token to market.",
+  },
+  {
+    icon: Wrench,
+    title: "All-in-One Platform",
+    description: "Everything you need to build, launch, and grow on Solana.",
+  },
+  {
+    icon: Users,
+    title: "Community Driven",
+    description: "$SCF holders get access to premium features and governance.",
+  },
+  {
     icon: Coins,
-    title: "True Asset Ownership",
-    description: "Play the game. Own your loot. Your assets are provably yours.",
+    title: "Revenue Sharing",
+    description: "Stake $SCF to earn a share of platform fees.",
   },
   {
     icon: Zap,
-    title: "Instant Transactions",
-    description: "In-game asset collections and redemptions are instant, final, no rollbacks.",
-  },
-  {
-    icon: Wallet,
-    title: "Cross-Platform Wallet",
-    description: "Move assets between chains from a single wallet. No need for multiple wallets.",
-  },
-  {
-    icon: Server,
-    title: "Based Scalability",
-    description: "Performance stays clean as your player base explodes. Built to handle peak traffic.",
-  },
-  {
-    icon: DollarSign,
-    title: "Low Gas Fees",
-    description: "Micro-transactions without the macro fees. Keep more of what you earn.",
+    title: "Solana Speed",
+    description: "All services built on Solana for lightning-fast transactions.",
   },
 ];
 
@@ -38,16 +38,16 @@ export default function BenefitsSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-green))] bg-clip-text text-transparent">
-              10x Your Gaming Experience
+              Why Hold $SCF?
             </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Built for gamers who demand the best. Experience true ownership and instant transactions.
+            Be part of the Solana Creator ecosystem. Access services, earn rewards, and help shape the future.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-          {benefits.map((benefit, index) => (
+          {benefits.map((benefit) => (
             <Card
               key={benefit.title}
               className="group relative p-6 bg-card/50 border-border/50 backdrop-blur-sm overflow-visible hover-elevate"
