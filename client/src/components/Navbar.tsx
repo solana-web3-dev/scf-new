@@ -49,7 +49,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <div className="hidden md:flex items-center gap-2">
               <a
-                href="https://twitter.com"
+                href="https://x.com/solcreatorsfun"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md hover:bg-secondary transition-colors"
@@ -58,7 +58,7 @@ export default function Navbar() {
                 <SiX className="w-4 h-4 text-muted-foreground" />
               </a>
               <a
-                href="https://telegram.org"
+                href="https://telegram.me/solcreatorsfun"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md hover:bg-secondary transition-colors"
@@ -105,10 +105,10 @@ export default function Navbar() {
               </button>
             ))}
             <div className="flex items-center gap-4 px-4 pt-4 border-t border-border">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/solcreatorsfun" target="_blank" rel="noopener noreferrer">
                 <SiX className="w-5 h-5 text-muted-foreground" />
               </a>
-              <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+              <a href="https://telegram.me/solcreatorsfun" target="_blank" rel="noopener noreferrer">
                 <SiTelegram className="w-5 h-5 text-muted-foreground" />
               </a>
             </div>
